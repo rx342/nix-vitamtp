@@ -1,0 +1,27 @@
+{
+  "pins": {
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre820016.3078b9a9e75f/nixexprs.tar.xz",
+      "hash": "0kwcr8qmiqpihrnccq22qxsmgmh33wfdx64l29p2sqavh8gh205y"
+    },
+    "vitamtp": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "codestation",
+        "repo": "vitamtp"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v2.5.9",
+      "revision": "7ab537a4f45e34984cbeb9cf1b1af543a75a3dc0",
+      "url": "https://api.github.com/repos/codestation/vitamtp/tarball/v2.5.9",
+      "hash": "09c9f7gqpyicfpnhrfb4r67s2hci6hh31bzmqlpds4fywv5mzaf8"
+    }
+  },
+  "version": 5
+}
