@@ -28,13 +28,18 @@ stdenv.mkDerivation {
   configurePhase = ''
     mkdir -p $out
     ./autogen.sh
-    ./configure --prefix=$out
+    ./configure --prefix=$out --libdir=$lib/lib --includedir=$dev/include
   '';
   buildPhase = ''
     make
   '';
   installPhase = ''
     make install
-    install -D -m644 $src/debian/libvitamtp5.udev $out/lib/udev/rules.d/60-psvita.rules
+    install -D -m644 $src/debian/libvitamtp5.udev $lib/lib/udev/rules.d/60-psvita.rules
   '';
+  outputs = [
+    "lib"
+    "dev"
+    "out"
+  ];
 }
