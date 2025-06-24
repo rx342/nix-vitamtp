@@ -2,7 +2,7 @@
   system ? builtins.currentSystem,
   source ? import ./npins,
   pkgs ? import source.nixpkgs {
-    overlays = [ ];
+    overlays = [ (import ./overlays/default.nix) ];
     config = { };
     inherit system;
   },
