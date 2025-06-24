@@ -31,7 +31,7 @@ To be able to detect your PS VITA you need to add an [udev](https://wiki.archlin
 You need to add the following to your `configuration.nix`
 
 ```nix
-services.udev.packages = [ (import ./path/to/nix-vitamtp { }).lib ];
+imports = [ "${./path/to/nix-vitamtp}/modules/nixos.nix" ];
 ```
 
 and you can check that `/etc/udev/rules.d/60-psvita.rules` exists.
