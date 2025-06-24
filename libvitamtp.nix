@@ -17,11 +17,13 @@ stdenv.mkDerivation {
   nativeBuildInputs = [
     autoconf
     automake
+    pkg-config
+  ];
+  buildInputs = [
     libtool
     libusb1
     libxml2
     gettext
-    pkg-config
   ];
   configurePhase = ''
     mkdir -p $out
