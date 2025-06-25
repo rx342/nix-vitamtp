@@ -1,4 +1,5 @@
 final: prev: {
+  libusb1 = prev.libusb1.override { withDocs = false; };
   libxml2 = (prev.libxml2.override { pythonSupport = false; }).overrideAttrs {
     version = "2.9.14";
     doCheck = false;
