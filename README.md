@@ -40,7 +40,7 @@ and you can check that `/etc/udev/rules.d/60-psvita.rules` exists.
 
 ```bash
 cd nix-vitamtp
-nix-build
+nix-build -A udev
 
-sudo cp ./result-lib/lib/udev/rules.d/60-psvita.rules /usr/lib/udev/rules.d/
+sudo cp ./result/lib/udev/rules.d/60-psvita.rules /usr/lib/udev/rules.d/
 ```

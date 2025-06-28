@@ -35,7 +35,6 @@ stdenv.mkDerivation {
   '';
   installPhase = ''
     make install
-    install -D -m644 $src/debian/libvitamtp5.udev $lib/lib/udev/rules.d/60-psvita.rules
   '';
   outputs = [
     "lib"
