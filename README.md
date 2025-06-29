@@ -24,10 +24,18 @@ git clone https://github.com/rx342/nix-vitamtp.git
 
 ## Usage
 
+### Build library
+
+```bash
+nix-build -A libvitamtp
+```
+
+### udev rule
+
 To be able to detect your PS VITA you need to add an [udev](https://wiki.archlinux.org/title/Udev) rule.
 You can download it from [codestation/vitamtp](https://github.com/codestation/vitamtp/blob/master/debian/libvitamtp5.udev) or do it from this repository (it does the same thing).
 
-### NixOS
+#### NixOS
 
 You need to add the following to your `configuration.nix`
 
@@ -37,7 +45,7 @@ imports = [ "${./path/to/nix-vitamtp}/modules/nixos.nix" ];
 
 and you can check that `/etc/udev/rules.d/60-psvita.rules` exists.
 
-### Other Linux distributions
+#### Other Linux distributions
 
 ```bash
 cd nix-vitamtp
