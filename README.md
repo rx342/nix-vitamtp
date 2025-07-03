@@ -34,6 +34,7 @@ nix-build -A libvitamtp
 
 To be able to detect your PS VITA you need to add an [udev](https://wiki.archlinux.org/title/Udev) rule.
 You can download it from [codestation/vitamtp](https://github.com/codestation/vitamtp/blob/master/debian/libvitamtp5.udev) or do it from this repository (it does the same thing).
+If you decide to install from _this_ repository, choose one of the following method according to your Linux distribution.
 
 #### NixOS
 
