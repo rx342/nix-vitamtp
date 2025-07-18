@@ -54,3 +54,7 @@ nix-build -A udev
 
 sudo cp ./result/lib/udev/rules.d/60-psvita.rules /usr/lib/udev/rules.d/
 ```
+
+## Credits
+
+- [codestation/vitamtp](https://github.com/codestation/vitamtp)
