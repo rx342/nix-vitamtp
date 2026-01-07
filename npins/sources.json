@@ -3,8 +3,8 @@
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre820016.3078b9a9e75f/nixexprs.tar.xz",
-      "hash": "0kwcr8qmiqpihrnccq22qxsmgmh33wfdx64l29p2sqavh8gh205y"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre921317.16c7794d0a28/nixexprs.tar.xz",
+      "hash": "sha256-G6ie+qOCRSV7wzOY+6L1o8GvcH1qDcE/DTzDT4CRdNw="
     },
     "vitamtp": {
       "type": "GitRelease",
@@ -17,11 +17,11 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v2.5.9",
-      "revision": "7ab537a4f45e34984cbeb9cf1b1af543a75a3dc0",
-      "url": "https://api.github.com/repos/codestation/vitamtp/tarball/v2.5.9",
-      "hash": "09c9f7gqpyicfpnhrfb4r67s2hci6hh31bzmqlpds4fywv5mzaf8"
+      "version": "v2.5.10",
+      "revision": "949dd8975abd8f6c70a7e076939736d0383d1669",
+      "url": "https://api.github.com/repos/codestation/vitamtp/tarball/refs/tags/v2.5.10",
+      "hash": "sha256-GM3pHzFQ4M2jGDm3slNOCK7wjApFLZeqI3soxMwG5lo="
     }
   },
-  "version": 5
+  "version": 7
 }

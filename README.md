@@ -11,12 +11,11 @@ Packaging [codestation/vitamtp](https://github.com/codestation/vitamtp) with Nix
 
 ## Why and how?
 
-`vitamtp` is an "old" package (`2.5.9` dates back to 2016) which makes it tricky to build today.
-With Nix and pinned dependencies, we are sure that it will work forever™ (for legal reasons: this is a joke).
+I started this because [codestation/vitamtp](https://github.com/codestation/vitamtp) wasn't updated for a long time ([`2.5.9`](https://github.com/codestation/vitamtp/tree/v2.5.9) dated back to 2016) which was really tricky to build.
+I decided to package it with Nix to make sure everything will work in the future.
+For more details, please refer to [this commit](https://github.com/rx342/nix-vitamtp/tree/893604f0529a37fa5ab4705ef571b2e9ff271696).
 
-- An old version of `libxml2` is required (we use `2.9.14` in this repository)
-  - Defined in the [overlay](./overlays/default.nix)
-  - Needs to be built from source, which increases build time
+In 2025 it was updated again so I will try to maintain this.
 
 ## Installation
 

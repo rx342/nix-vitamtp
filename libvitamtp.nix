@@ -12,19 +12,22 @@
 
 stdenv.mkDerivation {
   pname = "libvitamtp";
-  version = "2.5.9";
+  version = "2.5.10";
   src = vitamtp;
   nativeBuildInputs = [
     autoconf
     automake
+    gettext
+    libtool
     pkg-config
   ];
   buildInputs = [
-    libtool
     libusb1
     libxml2
-    gettext
   ];
+  patchPhase = ''
+    substituteInPlace configure.ac --replace-fail 'AM_ICONV' '# AM_ICONV'
+  '';
   configurePhase = ''
     mkdir -p $out
     ./autogen.sh
