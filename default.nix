@@ -14,4 +14,7 @@
   udev = pkgs.runCommand "psvita-udev" { } ''
     install -D -m644 ${vitamtp}/debian/libvitamtp5.udev $out/lib/udev/rules.d/60-psvita.rules
   '';
+  nixosModules = {
+    default = ./modules/nixos.nix;
+  };
 }

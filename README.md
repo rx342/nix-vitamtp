@@ -42,7 +42,7 @@ If you decide to install from _this_ repository, choose one of the following met
 You need to add the following to your `configuration.nix`
 
 ```nix
-imports = [ "${./path/to/nix-vitamtp}/modules/nixos.nix" ];
+imports = [ (import ./path/to/nix-vitamtp {}).nixosModules.default ];
 ```
 
 and you can check that `/etc/udev/rules.d/60-psvita.rules` exists.
